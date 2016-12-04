@@ -3,7 +3,7 @@
 This project shows a simple implementation of genetic algorithm for finding the maximum of a given function.
 
 ## How to run:
-
+```
 $ lua test_genetic_algorithm.lua 
 1..6
 # Started on Mon Dec  5 00:35:06 2016
@@ -25,4 +25,4 @@ GA converged: 39 out of 100
 Subt. sol.:0.99454406136393,0.077648860438563
 ok     6        TestGA.test_SubtractExample
 # Ran 6 tests in 0.301 seconds, 6 successes, 0 failures
-jesus@tello:~/scratch/Programas/Git_GA_lua/geneticAlgorithm_lua$ 
+```
