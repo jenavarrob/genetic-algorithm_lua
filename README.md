@@ -1,4 +1,4 @@
-# geneticAlgorithm_lua
+# genetic-algorithm_lua
 
 This project shows a simple implementation of genetic algorithm for finding the maximum of a given function.
 
@@ -19,7 +19,18 @@ Genetic algorithms (GAs) use the genetic operators selection, mutation, crossove
 
 ## GA lua-code
 
+The code uses the **GenerticAlgorithm.new()** function to initialize the GA with the population size and the probabilities for mutation and crossover, as well as, the size of the population for elitism. The parameter rangeValues specifies the range of values for the genes in the chromosomes.
 
+The function **evolve()** contains the code that creates new generations by:
+  * computing fitness of the population and sorting accordingly for maximal fitness, 
+  * applying elitism, note that this parameter is specified as a fixed number of chromosomes of the population and it is not specified as a percentage of the population, 
+  * breeding the best solutions by means of tournament selection, two point crossover operator and uniformly distributed mutation, until all chromosomes for the new population are obtained.
+
+The following parameters are hard-coded:
+  * _convergenceThres = 0.01, is the threshold for convergence, decrease this value to let the GA run more generations
+  * _numChildren = 2, this value means two parents breed 2 children, which is the standard in GAs.
+  * If you want pseudo-random results each time you run the GA program, do not forget to uncomment 
+    __--math.randomseed( os.time() )__
 
 ## How to run:
 ```
