@@ -19,7 +19,7 @@ Genetic algorithms (GAs) use the genetic operators selection, mutation, crossove
 
 ## GA lua-code
 
-The code uses the **GenerticAlgorithm.new()** function to initialize the GA with the population size and the probabilities for mutation and crossover, as well as, the size of the population for elitism. The parameter rangeValues specifies the range of values for the genes in the chromosomes.
+The code uses the **GenerticAlgorithm.new()** function to initialize the GA with the population size and the probabilities for mutation and crossover, as well as, the size of the population for elitism. The parameter rangeValues specifies the range of values for the genes in the chromosomes, and the last parameter specifies the function to maximize.
 
 The function **evolve()** contains the code that creates new generations by:
   * computing fitness of the population and sorting accordingly for maximal fitness, 
@@ -31,6 +31,8 @@ The following parameters are hard-coded:
   * _numChildren = 2, this value means two parents breed 2 children, which is the standard in GAs.
   * If you want pseudo-random results each time you run the GA program, do not forget to uncomment 
     __--math.randomseed( os.time() )__
+
+Finally, check out the file test_genetic_algorithm for some examples on how to use the GA lua-code to maximize some simple functions.
 
 ## How to run:
 ```
