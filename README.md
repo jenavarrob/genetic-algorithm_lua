@@ -2,6 +2,25 @@
 
 This project shows a simple implementation of genetic algorithm for finding the maximum of a given function.
 
+## Genetic Algorithm (GA)
+
+Evolutionary algorithms are computational methods to find optimal solutions based on evolution. In other words, this methods iteratively improve solutions applying biological evolutionary principles. Evolutionary algorithms relate to different methods like genetic algorithm, evolutionary strategies, genetic programming, etc. which use the same following evolutionary principles to obtain “good enough” solutions by:
+  * creating a population of data structures that represent solutions
+  * evolving populations by changing those solutions, combining them to create new ones, and, on average, 
+  * making the better-suited survive and the worst-suited perish. 
+
+Genetic algorithms (GAs) use the genetic operators selection, mutation, crossover and elitism. GAs were first introduced by John H. Holland in 1975. Sinde then, many researchers have made notably contributions to improve the theoretical foundations and applications of GAs. Among them, David Goldberg published in 1989 the book "Genetic Algorithms in search, optimization, and machine learning" and Zbigniew Michalewicz in 1998 published the book "Genetic Algorithms + Data Structures = Evolution Programs".
+ 
+ GAs general methodology:
+ 1. Identification of a suitable representation scheme to solve the problem.
+ 2. Determine the fitness measure
+ 3. Determine the parameters and variables for controlling the algorithm, number of chromosomes (M), percentage of elitism (probability of reproduction pr), probabilities of crossover (pc) and mutation (pm), 
+ 4. Criterion for terminating the process: maximal number of generations (G) or threshold for convergence of the population
+
+## GA lua-code
+
+
+
 ## How to run:
 ```
 $ lua test_genetic_algorithm.lua 
